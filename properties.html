@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homify Properties</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body id="properties-body">
+    
+    <header>
+        <div class="header-top">
+            <div class="header-top-left">
+                <img src="./assets/icons/designs/phone-white.svg" alt="Phone Icon">
+                <p class="header-top-text">+1 (123) 456-7890</p>
+            </div>
+
+            <div class="header-top-right">
+                <div class="header-top-in">
+                    <p class="header-top-text">Mon - Fri: 9AM - 6PM</p>
+                </div>
+                <div class="header-icons">
+                    <img class="header-top-icon" src="./assets/icons/social/fb-white.svg" alt="Facebook">
+                    <img class="header-top-icon" src="./assets/icons/social/twitter-white.svg" alt="Twitter">
+                    <img class="header-top-icon" src="./assets/icons/social/insta-white.svg" alt="Instagram">
+                </div>
+            </div>
+            
+        </div>
+
+        <nav class="nav_bar">
+            <div class="nav_bar-in">
+                <div class="nav_logo-box">
+                    <div class="nav_logo-in">
+                        <img src="./assets/icons/logo/homify-logo.svg" alt="">
+                    </div>
+                    <div class="logo_txt-out">
+                        <p class="logo_txt-main">Homify</p>
+                        <p class="logo_txt-alt">Estates</p>
+                    </div>
+                </div>
+                <div class="nav_links">
+                    <ul class="nav_links-list">
+                        <li><a class="nav_link" href="./index.html">Home</a></li>
+                        <li><a class="nav_link" href="./properties.html">Properties</a></li>
+                        <li><a class="nav_link" href="#services">Services</a></li>
+                        <li><a class="nav_link" href="./about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="nav_btns">
+                    <a class="nav_btn" href="./contact.html">
+                        <p class="nav_btn-txt">Schedule a Visit</p>
+                        <img class="nav_btn-img" src="./assets/icons/buttons/arrow-right-white.svg" alt="Arrow Right">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="properties-main">
+        <section id="properties-hero" class="hero">
+            <div class="hero-img-box">
+                <img src="./assets/images/bg/House-bg-1.avif" alt="Hero Image">
+            </div>
+
+            <div class="hero_content">
+                <div class="hero-txt">
+                   <h1>Find Your Dream Home</h1>
+                </div>
+
+                <div class="list-cat">
+                    <a class="list-cat-link" href="./properties.html?filter=buy">Buy</a>
+                    <a class="list-cat-link" href="./properties.html?filter=rent">Rent</a>
+                    <a class="list-cat-link" href="./properties.html?filter=sell">Sell</a>
+                </div>
+
+                <div class="hero-srch-box">
+                    <input type="search" class="hero-srch-in" placeholder="Search for your dream home">
+                    <div class="hero-srch-btn">
+                        <img class="hero-srch-btn-img" src="./assets/icons/buttons/arrow-right-white.svg" alt="Arrow Right">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="properties" class="properties">
+            <div class="container">
+                
+                
+                <div class="filter-btns">
+                    <div class="filter-btns-txt">
+                        <p>Showing 1-5 of 10 properties</p>
+                    </div>
+                    <div class="filter-btns-in">
+                        <select class="filter-select" name="sort" id="sort" value="Sort by">
+                            <option value="default">Newest First</option>
+                            <option value="price-low-high">Price: Low to High</option>
+                            <option value="price-high-low">Price: High to Low</option>
+                            <option value="small">Small Listings</option>
+                        </select>
+                        <button class="filter-btn">Grid</button>
+                        <button class="filter-btn">List</button>
+                    </div>
+                </div>
+                
+
+                <div class="properties-grid">
+                    <div class="filter-card">
+                        <div>
+                            <p>Filter Properties</p>
+                            <button>Reset Filters</button>
+                        </div>
+                        <label for="location">
+                            Location
+                            <input type="text" placeholder="City or Neighborhood" name="location" id="location">
+                        </label>
+
+                        <div class="poperty-type">
+                            <p>Property Type</p>
+                            
+                            <label for="house">
+                                House
+                                <input type="checkbox" name="property-type" id="house">
+                                5
+                            </label>
+
+                            <label for="apartment">
+                                Apartment
+                                <input type="checkbox" name="property-type" id="apartment">
+                                6
+                            </label>
+
+                            <label for="villa">
+                                Villa
+                                <input type="checkbox" name="property-type" id="villa">
+                                4
+                            </label>
+
+                            <label for="townhouse">
+                                Townhouse
+                                <input type="checkbox" name="property-type" id="townhouse">
+                                3
+                            </label>
+
+                            <label for="land">
+                                Land
+                                <input type="checkbox" name="property-type" id="land">
+                                3
+                            </label>
+                        </div>
+
+                        <div class="price-range">
+                            <h3>Price Range</h3>
+
+                            <div class="price-slider">
+                                <div class="slider-track"></div>
+
+                                <input
+                                type="range"
+                                id="min-price"
+                                min="0"
+                                max="1000000"
+                                value="0"
+                                step="10000"
+                                >
+
+                                <input
+                                type="range"
+                                id="max-price"
+                                min="0"
+                                max="1000000"
+                                value="1000000"
+                                step="10000"
+                                >
+                            </div>
+
+                            <div class="price-labels">
+                                <span>$0</span>
+                                <span>$1,000,000+</span>
+                            </div>
+
+                            <div class="price-inputs">
+
+                                <input
+                                class="price-input"
+                                type="number"
+                                id="min-price-input"
+                                placeholder="Min Price"
+                                min="0"
+                                >
+
+                                <span>to</span>
+
+                                <input
+                                class="price-input"
+                                type="number"
+                                id="max-price-input"
+                                placeholder="Max Price"
+                                min="0"
+                                >
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="bedrooms">
+                            <h3>Bedrooms</h3>
+
+                            <label for="bedrooms-1">
+                                1
+                                <input type="checkbox" name="bedrooms" id="bedrooms-1">
+                                3
+                            </label>
+
+                            <label for="bedrooms-2">
+                                2
+                                <input type="checkbox" name="bedrooms" id="bedrooms-2">
+                                7
+                            </label>
+
+                            <label for="bedrooms-3">
+                                3
+                                <input type="checkbox" name="bedrooms" id="bedrooms-3">
+                                8
+                            </label>
+
+                            <label for="bedrooms-4">
+                                4+
+                                <input type="checkbox" name="bedrooms" id="bedrooms-4">
+                                2
+                            </label>
+
+                        </div>
+
+                        <div class="features">
+                            <h3>Features</h3>
+
+                            <label for="pool">
+                                Pool
+                                <input type="checkbox" name="features" id="pool">
+                                2
+                            </label>
+
+                            <label for="garage">
+                                Garage
+                                <input type="checkbox" name="features" id="garage">
+                                5
+                            </label>
+
+                            <label for="garden">
+                                Garden
+                                <input type="checkbox" name="features" id="garden">
+                                4
+                            </label>
+
+                            <label for="fireplace">
+                                Fireplace
+                                <input type="checkbox" name="features" id="fireplace">
+                                3
+                            </label>
+
+                        </div>
+
+                        <input type="submit" value="Apply Filters" class="apply-filters-btn">
+                    </div>
+                    
+                    <article class="property-card">
+                        <div class="property-card-img">
+                            <span class="property-card-status">For Sale</span>
+                            <span class="property-card-fav"><img src="./assets/icons/buttons/heart-white.svg" alt="Heart Icon"></span>
+                            <img src="./assets/images/properties/house 1/house 1.webp" alt="Property Image">
+                        </div>
+                        
+                        <div class="property-card-content">
+                            <h3 class="property-card-content-price">$450,000</h3>
+                            <p class="property-card-content-address">123 Main Street, City, State 12345</p>
+                            <div class="property-card-content-details">
+                                <span class="beds"><img src="./assets/icons/designs/bed-white.svg" alt=""> <p>3 bd</p></span>
+                                <span class="baths"><img src="./assets/icons/designs/bath-white.svg" alt=""> <p>3 ba</p></span>
+                                <span class="sqft"><img src="./assets/icons/designs/square-white.svg" alt=""> <p>2,500 sqft</p></span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="property-card">
+                        <div class="property-card-img">
+                            <span class="property-card-status">For Sale</span>
+                            <span class="property-card-fav"><img src="./assets/icons/buttons/heart-white.svg" alt="Heart Icon"></span>
+                            <img src="./assets/images/properties/house 2/house 2.jpg" alt="Property Image">
+                        </div>
+                            
+                        <div class="property-card-content">
+                            <h3 class="property-card-content-price">$450,000</h3>
+                            <p class="property-card-content-address">123 Main Street, City, State 12345</p>
+                            <div class="property-card-content-details">
+                                <span class="beds"><img src="./assets/icons/designs/bed-white.svg" alt=""> <p>3 bd</p></span>
+                                <span class="baths"><img src="./assets/icons/designs/bath-white.svg" alt=""> <p>3 ba</p></span>
+                                <span class="sqft"><img src="./assets/icons/designs/square-white.svg" alt=""> <p>2,500 sqft</p></span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="property-card">
+                        <div class="property-card-img">
+                            <span class="property-card-status">For Sale</span>
+                            <span class="property-card-fav"><img src="./assets/icons/buttons/heart-white.svg" alt="Heart Icon"></span>
+                            <img src="./assets/images/properties/house 3/house3.webp" alt="Property Image">
+                        </div>
+                            
+                        <div class="property-card-content">
+                            <h3 class="property-card-content-price">$450,000</h3>
+                            <p class="property-card-content-address">123 Main Street, City, State 12345</p>
+                            <div class="property-card-content-details">
+                                <span class="beds"><img src="./assets/icons/designs/bed-white.svg" alt=""> <p>3 bd</p></span>
+                                <span class="baths"><img src="./assets/icons/designs/bath-white.svg" alt=""> <p>3 ba</p></span>
+                                <span class="sqft"><img src="./assets/icons/designs/square-white.svg" alt=""> <p>2,500 sqft</p></span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="property-card">
+                        <div class="property-card-img">
+                            <span class="property-card-status">For Sale</span>
+                            <span class="property-card-fav"><img src="./assets/icons/buttons/heart-white.svg" alt="Heart Icon"></span>
+                            <img src="./assets/images/properties/house 4/house 4.webp" alt="Property Image">
+                        </div>
+                            
+                        <div class="property-card-content">
+                            <h3 class="property-card-content-price">$450,000</h3>
+                            <p class="property-card-content-address">123 Main Street, City, State 12345</p>
+                            <div class="property-card-content-details">
+                                <span class="beds"><img src="./assets/icons/designs/bed-white.svg" alt=""> <p>3 bd</p></span>
+                                <span class="baths"><img src="./assets/icons/designs/bath-white.svg" alt=""> <p>3 ba</p></span>
+                                <span class="sqft"><img src="./assets/icons/designs/square-white.svg" alt=""> <p>2,500 sqft</p></span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <article class="property-card">
+                        <div class="property-card-img">
+                            <span class="property-card-status">For Sale</span>
+                            <span class="property-card-fav"><img src="./assets/icons/buttons/heart-white.svg" alt="Heart Icon"></span>
+                            <img src="./assets/images/properties/house 5/house 5.webp" alt="Property Image">
+                        </div>
+                            
+                        <div class="property-card-content">
+                            <h3 class="property-card-content-price">$450,000</h3>
+                            <p class="property-card-content-address">123 Main Street, City, State 12345</p>
+                            <div class="property-card-content-details">
+                                <span class="beds"><img src="./assets/icons/designs/bed-white.svg" alt=""> <p>3 bd</p></span>
+                                <span class="baths"><img src="./assets/icons/designs/bath-white.svg" alt=""> <p>3 ba</p></span>
+                                <span class="sqft"><img src="./assets/icons/designs/square-white.svg" alt=""> <p>2,500 sqft</p></span>
+                            </div>
+                        </div>
+
+                    </article>
+
+                    <div class="pagination">
+                        <button class="pagination-btn" type="button" aria-label="Previous">Previous</button>
+                        <button class="pagination-btn" type="button" aria-label="Page 1">1</button>
+                        <button class="pagination-btn" type="button" aria-label="Page 2">2</button>
+                        <button class="pagination-btn" type="button" aria-label="Page 3">3</button>
+                        <button class="pagination-btn" type="button" aria-label="Next">Next</button>
+                    </div>
+
+                </div>
+
+                <div class="properties-steps-box">
+                    <h2>Steps to get your dream home</h2>
+                
+                    <div class="properties-steps">
+                        <div class="property-step">
+                            <img src="./assets/icons/designs/step1.svg" alt="Step 1">
+                            <div class="property-step-txt">
+                                <h3>Step 1</h3>
+                                <p>Search for your dream home using our advanced search filters.</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="property-step">
+                            <img src="./assets/icons/designs/step2.svg" alt="Step 2">
+                            <div class="property-step-txt">
+                                <h3>Step 2</h3>
+                                <p> Schedule a visit with one of our expert agents.</p>
+                            </div>
+                        </div>
+
+                        <div class="property-step">
+                            <img src="./assets/icons/designs/step3.svg" alt="Step 3">
+                            <div class="property-step-txt">
+                                <h3>Step 3</h3>
+                                <p>Close the deal and move into your new home.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="properties-cta">
+            <div class="container">
+                <div class="properties-cta-bx">
+                    <div class="properties-cta-lft">
+                        <h2>Subscribe to our newsletter</h2>
+                        <p>Stay updated with the latest property listings and market insights.</p>
+                    </div>
+
+                    <div class="properties-cta-rgt">
+                        <div class="properties-cta-in-bx">
+                            <input type="email" class="properties-cta-in" placeholder="Enter your email">
+                            <button class="properties-cta-btn">Subscribe</button>
+                        </div>
+                       
+                       <div class="properties-cta-privacy">
+                            <img src="./assets/icons/designs/lock-gold.svg" alt="Newsletter">
+                            <p>We respect your privacy. Unsubscribe at any time.</p>
+                       </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer id="properties-footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+                <div class="footer-card">
+                    <div class="logo">
+                        <div class="nav_logo-box">
+                            <div class="nav_logo-in">
+                                <img src="./assets/icons/logo/homify-logo.svg" alt="">
+                            </div>
+                            <div class="logo_txt-out">
+                                <p class="logo_txt-main">Homify</p>
+                                <p class="logo_txt-alt">Estates</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="footer-logo-txt"></p>
+
+                    <div class="footer-icons">
+                        <img class="footer-icon" src="./assets/icons/social/fb-white.svg" alt="Facebook">
+                        <img class="footer-icon" src="./assets/icons/social/twitter-white.svg" alt="Twitter">
+                        <img class="footer-icon" src="./assets/icons/social/insta-white.svg" alt="Instagram">
+                        <img class="footer-icon" src="./assets/icons/social/linkedin-white.svg" alt="LinkedIn">
+                    </div>
+                </div>
+           
+                <div class="footer-card">
+                    <h2>Quick Links</h2>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About Us</a>
+                    <a href="./services.html">Services</a>
+                    <a href="./properties.html">Properties</a>
+                    <a href="./contact.html">Contact</a>
+                </div>
+
+                <div class="footer-card">
+                    <h2>Property types</h2>
+                    <a href="./properties.html?filter=buy">Buy</a>
+                    <a href="./properties.html?filter=rent">Rent</a>
+                    <a href="./properties.html?filter=sell">Sell</a>
+                </div>
+
+                <div class="footer-card">
+                    <h2>Company</h2>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                    <a href="">Home</a>
+                </div>
+
+                <div class="footer-card">
+                    <h2>Reach US</h2>
+                    <div class="p-num"> 
+                        <img src="./assets/icons/designs/phone-white.svg" alt="Phone Icon">
+                        <p>+1 (123) 456-7890</p>
+                    </div>
+
+                    <div class="email"> 
+                        <img src="./assets/icons/designs/email-white.svg" alt="Email Icon">
+                        <p>info@homifyestates.com</p>
+                    </div>
+
+                    <div class="address"> 
+                        <img src="./assets/icons/designs/address-white.svg" alt="Address Icon">
+                        <p>123 Main Street, City, State 12345</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-btm">
+                <div>
+                    <img src="./assets/icons/designs/logo-white.svg" alt="Company Logo">
+                    <p>&copy; 2023 Homify Estates. All rights reserved.</p>
+                </div>
+
+                <div>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

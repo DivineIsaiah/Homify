@@ -1,0 +1,20 @@
+.hero{
+    background-image: url(../../assets/images/bg/House-bg-1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-content: center;
+
+}
+
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+}
+
+.hero-txt{
+    color: var(--text-inverse);
+    font-size: var(--font-size-hero);
+}

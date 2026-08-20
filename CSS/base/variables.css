@@ -107,6 +107,7 @@
    --spacing-4: 1rem;     /* 16px */
    --spacing-5: 1.25rem;  /* 20px */
    --spacing-6: 1.5rem;   /* 24px */
+   --spacing-7: 1.7rem;
    --spacing-8: 2rem;     /* 32px */
    --spacing-10: 2.5rem;  /* 40px */
    --spacing-12: 3rem;    /* 48px */
@@ -117,6 +118,10 @@
    --section-padding-y: var(--spacing-16);
    --section-padding-x: var(--spacing-8);
    --container-max-width: 1280px;
+   --nav-padding-y: var(--spacing-5);
+   --nav-padding-x: var(--spacing-7);
+
+   --nav-btn-gap: var(--spacing-8);
 
 
    /* ============================================
@@ -134,7 +139,7 @@
    --transition-smooth: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
    --transition-bounce: 0.9s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
-   --blur-overlay: blur(10px);
+   --blur-over: blur(15px);
 
    /* ============================================
       Z-INDEX

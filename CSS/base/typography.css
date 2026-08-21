@@ -1,0 +1,8 @@
+ @font-face {
+      font-family: CosmicLedger;
+      src:url(../../assets/fonts/CosmicLedger.otf) format("truetype");
+   }
+
+   p, a, h4{
+    font-size: var(--text-2xl);
+   }

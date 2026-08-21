@@ -1,127 +1,200 @@
 
 :root {
-  /* ============================================
-     COLOR PALETTE — Raw Values (HEX / HSL)
-     ============================================ */
-  /* Primary & Dark Greens */
-   --color-forest-dark: #0f2721;      /* Deep forest green for main headers, dark CTAs, and footers */
-   --color-forest-medium: #16382f;    /* Hover states for dark green elements */
-   --color-emerald: #1e4d3f;          /* Accent green for badges and icon circles */
-   --color-emerald-light: #e8f0ec;    /* Soft tint for icon container backgrounds */
+   --color-forest-dark: 165 44% 11%;
+   --color-forest-medium: 164 44% 15%;
+   --color-emerald: 162 44% 21%;
+   --color-emerald-light: 150 21% 93%;
 
-   /* Gold & Warm Accents */
-   --color-gold: #c69b59;             /* Warm gold for secondary buttons, borders, and badges */
-   --color-gold-hover: #b38848;       /* Hover state for gold buttons */
-   --color-gold-light: #f7f3ed;       /* Light warm background tint */
+   --color-gold: 36 49% 56%;
+   --color-gold-hover: 36 43% 49%;
+   --color-gold-light: 36 39% 95%;
 
-   /* Neutrals & Grays */
-   --color-white: #ffffff;
-   --color-off-white: #fafafa;        /* Page background */
-   --color-gray-50: #f4f5f6;         /* Form input fill, light card backgrounds */
-   --color-gray-100: #e5e7eb;        /* Light borders, dividers */
-   --color-gray-300: #d1d5db;        /* Input borders */
-   --color-gray-500: #6b7280;        /* Secondary body text, meta information */
-   --color-gray-800: #1f2937;        /* Primary body text */
-   --color-black: #111827;           /* Main headings and dark titles */
+   --color-white: 0 0% 100%;
+   --color-off-white: 0 0% 98%;
+   --color-gray-50: 210 10% 96%;
+   --color-gray-100: 220 13% 91%;
+   --color-gray-300: 216 12% 84%;
+   --color-gray-500: 220 9% 46%;
+   --color-gray-800: 215 28% 17%;
+   --color-black: 221 39% 11%;
 
-   /* Status Colors */
-   --color-sale-badge: #1e4d3f;      /* Green tag for "For Sale" */
-   --color-rent-badge: #c69b59;      /* Gold tag for "For Rent" */
+   --color-sale-badge: 162 44% 21%;
+   --color-rent-badge: 36 49% 56%;
 
 
    /* ============================================
-      SEMANTIC ROLES — Element Mappings
-      ============================================ */
+   REAL ESTATE PROJECT — SEMANTIC COLORS
+   ============================================ */
 
-   /* ---- Page Layout & Backgrounds ---- */
-   --bg-page: var(--color-off-white);
-   --bg-card: var(--color-white);
-   --bg-dark-section: var(--color-forest-dark);
-   --bg-alt-section: var(--color-gray-50);
-
-   /* ---- Typography & Text Colors ---- */
-   --text-primary: var(--color-gray-800);
-   --text-heading: var(--color-black);
-   --text-muted: var(--color-gray-500);
-   --text-inverse: var(--color-white);
-   --text-accent: var(--color-gold);
-
-   /* ---- Buttons & Interactive Elements ---- */
-   /* Primary Dark Button */
-   --btn-primary-bg: var(--color-forest-dark);
-   --btn-primary-text: var(--color-white);
-   --btn-primary-hover: var(--color-forest-medium);
-
-   /* Secondary Gold Button */
-   --btn-gold-bg: var(--color-gold);
-   --btn-gold-text: var(--color-white);
-   --btn-gold-hover: var(--color-gold-hover);
-
-   /* Light / Outline Button */
-   --btn-outline-bg: transparent;
-   --btn-outline-text: var(--color-gray-800);
-   --btn-outline-border: var(--color-gray-300);
-   --btn-outline-hover: var(--color-gray-50);
-
-   /* ---- Cards & Feature Blocks ---- */
-   --card-bg: var(--color-white);
-   --card-border: var(--color-gray-100);
-   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-   --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.08);
-
-   /* ---- Forms & Inputs ---- */
-   --input-bg: var(--color-gray-50);
-   --input-border: var(--color-gray-100);
-   --input-text: var(--color-gray-800);
-   --input-placeholder: var(--color-gray-500);
-   --input-focus-border: var(--color-forest-dark);
-
-   /* ---- Footer ---- */
-   --footer-bg: var(--color-forest-dark);
-   --footer-text: var(--color-gray-300);
-   --footer-heading: var(--color-white);
-   --footer-border: rgba(255, 255, 255, 0.1);
+      /* ---- Page & Section Backgrounds ---- */
+      --bg-page: var(--color-off-white);
+      --bg-card: var(--color-white);
+      --bg-dark: var(--color-forest-dark);
+      --bg-alt: var(--color-gray-50);
 
 
-   /* ============================================
-      TYPOGRAPHY
-      ============================================ */
-   --font-family-serif: 'Playfair Display', Georgia, serif;
-   --font-family-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      /* ---- Text ---- */
+      --text-primary: var(--color-gray-800);
+      --text-heading: var(--color-forest-dark);
+      --text-muted: var(--color-gray-500);
+      --text-inverse: var(--color-white);
+      --text-accent: var(--color-gold);
 
-   --font-size-hero: 3.75rem;     /* ~60px */
-   --font-size-h1: 3rem;          /* ~48px */
-   --font-size-h2: 2.25rem;       /* ~36px */
-   --font-size-h3: 1.5rem;        /* ~24px */
-   --font-size-h4: 1.25rem;       /* ~20px */
-   --font-size-body: 1rem;        /* ~16px */
-   --font-size-sm: 0.875rem;      /* ~14px */
+
+      /* ---- Buttons ---- */
+      --btn-primary-bg: var(--color-forest-dark);
+      --btn-primary-text: var(--color-white);
+      --btn-primary-hover: var(--color-forest-medium);
+
+      --btn-secondary-bg: var(--color-gold);
+      --btn-secondary-text: var(--color-white);
+      --btn-secondary-hover: var(--color-gold-hover);
+
+      --btn-outline-bg: transparent;
+      --btn-outline-text: var(--color-forest-dark);
+      --btn-outline-border: var(--color-gray-300);
+      --btn-outline-hover: var(--color-gray-50);
+
+
+      /* ---- Cards ---- */
+      --card-bg: var(--color-white);
+      --card-border: var(--color-gray-100);
+
+
+      /* ---- Forms ---- */
+      --input-bg: var(--color-gray-50);
+      --input-border: var(--color-gray-100);
+      --input-text: var(--color-gray-800);
+      --input-placeholder: var(--color-gray-500);
+      --input-focus-border: var(--color-forest-dark);
+
+
+      /* ---- Footer ---- */
+      --footer-bg: var(--color-forest-dark);
+      --footer-text: var(--color-gray-300);
+      --footer-heading: var(--color-white);
+      --footer-border: hsl(0 0% 100% / 0.1);
 
 
    /* ============================================
-      SPACING SCALE
-      ============================================ */
-   --spacing-1: 0.25rem;  /* 4px */
-   --spacing-2: 0.5rem;   /* 8px */
-   --spacing-3: 0.75rem;  /* 12px */
-   --spacing-4: 1rem;     /* 16px */
-   --spacing-5: 1.25rem;  /* 20px */
-   --spacing-6: 1.5rem;   /* 24px */
-   --spacing-7: 1.7rem;
-   --spacing-8: 2rem;     /* 32px */
-   --spacing-10: 2.5rem;  /* 40px */
-   --spacing-12: 3rem;    /* 48px */
-   --spacing-16: 4rem;    /* 64px */
-   --spacing-20: 5rem;    /* 80px */
+   SPACING SYSTEM
+   ============================================ */
 
-   /* Section Padding */
-   --section-padding-y: var(--spacing-16);
-   --section-padding-x: var(--spacing-8);
-   --container-max-width: 1280px;
-   --nav-padding-y: var(--spacing-5);
-   --nav-padding-x: var(--spacing-7);
+      /* ---- Base Spacing Scale ---- */
 
-   --nav-btn-gap: var(--spacing-8);
+      --space-1: 0.25rem;   /*  4px */
+      --space-2: 0.5rem;    /*  8px */
+      --space-3: 0.75rem;   /* 12px */
+      --space-4: 1rem;      /* 16px */
+      --space-5: 1.25rem;   /* 20px */
+      --space-6: 1.5rem;    /* 24px */
+      --space-8: 2rem;      /* 32px */
+      --space-10: 2.5rem;   /* 40px */
+      --space-12: 3rem;     /* 48px */
+      --space-16: 4rem;     /* 64px */
+      --space-20: 5rem;     /* 80px */
+      --space-24: 6rem;     /* 96px */
+
+
+      /* ============================================
+         TYPOGRAPHY — FONT SIZES
+         ============================================ */
+
+         --text-xs: 0.75rem;      /* 12px */
+         --text-sm: 0.875rem;     /* 14px */
+         --text-base: 1rem;       /* 16px */
+         --text-lg: 1.125rem;     /* 18px */
+         --text-xl: 1.25rem;      /* 20px */
+         --text-2xl: 1.5rem;      /* 24px */
+         --text-3xl: 1.875rem;    /* 30px */
+         --text-4xl: 2.25rem;     /* 36px */
+         --text-5xl: 3rem;        /* 48px */
+         --text-6xl: 3.75rem;     /* 60px */
+
+
+      /* ============================================
+         LAYOUT
+         ============================================ */
+
+      --container-max-width: 1280px;
+      --container-padding-x: var(--space-6);
+
+
+      /* ============================================
+         NAVIGATION
+         ============================================ */
+
+      --nav-padding-y: var(--space-4);
+      --nav-padding-x: var(--container-padding-x);
+      --nav-btn-pad-y: var(--space-2);
+      --nav-btn-pad-x: var(--space-4);
+      --nav-gap: var(--container-padding-x);
+
+
+      /* ============================================
+         SECTIONS
+         ============================================ */
+
+      --section-padding-y: var(--space-20);
+      --section-padding-x: var(--container-padding-x);
+
+      --section-gap: var(--space-12);
+
+
+      /* ============================================
+         SECTION CONTENT
+         ============================================ */
+
+      --section-heading-gap: var(--space-3);
+      --section-heading-content-gap: var(--space-6);
+
+
+      /* ============================================
+         PROPERTY GRID
+         ============================================ */
+
+      --property-grid-gap: var(--space-6);
+
+
+      /* ============================================
+         PROPERTY CARD
+         ============================================ */
+
+      --property-card-padding: var(--space-5);
+      --property-card-content-gap: var(--space-3);
+
+
+      /* ============================================
+         SEARCH & FILTERS
+         ============================================ */
+
+      --search-padding: var(--space-6);
+      --search-gap: var(--space-4);
+
+
+      /* ============================================
+         BUTTONS
+         ============================================ */
+
+      --button-padding-x: var(--space-6);
+      --button-padding-y: var(--space-3);
+      --button-gap: var(--space-3);
+
+
+      /* ============================================
+         FORMS
+         ============================================ */
+
+      --form-field-gap: var(--space-4);
+      --form-label-gap: var(--space-2);
+
+
+      /* ============================================
+         FOOTER
+         ============================================ */
+
+      --footer-padding-y: var(--space-16);
+      --footer-gap: var(--space-8);
 
 
    /* ============================================
@@ -133,8 +206,8 @@
    --radius-xl: 20px;
    --radius-full: 9999px;
 
-   --transition-fast: 0.15s ease;
-   --transition-fast: 0.15s ease-in-out;
+   --transition-fast1: 0.15s ease;
+   --transition-fast2: 0.15s ease-in-out;
    --transition-normal: 0.3s ease-in-out;
    --transition-smooth: 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
    --transition-bounce: 0.9s cubic-bezier(0.68, -0.6, 0.32, 1.6);

@@ -1,3 +1,5 @@
+/* hero section */
+
 .hero{
     background: hsl(var(--bg-page));
     height: 80vh;
@@ -112,5 +114,21 @@
 .srch-img{
     width: 40%;
 }
+
+
+
+/* Featured Properties Section */
+
+.feat{
+    display: grid;
+    place-items: center;
+    gap: var(--space-10);
+}
+
+.prop-head{
+    font-size: var(--text-6xl);
+}
+
+/*  */
 
 

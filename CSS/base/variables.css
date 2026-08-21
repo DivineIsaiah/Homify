@@ -8,6 +8,7 @@
    --color-gold: 36 49% 56%;
    --color-gold-hover: 36 43% 49%;
    --color-gold-light: 36 39% 95%;
+   --color-brown: 26 30% 32%;
 
    --color-white: 0 0% 100%;
    --color-off-white: 0 0% 98%;
@@ -92,6 +93,7 @@
       --space-10: 2.5rem;   /* 40px */
       --space-12: 3rem;     /* 48px */
       --space-16: 4rem;     /* 64px */
+      --space-17: 4.5rem;
       --space-20: 5rem;     /* 80px */
       --space-24: 6rem;     /* 96px */
 
@@ -110,6 +112,8 @@
          --text-4xl: 2.25rem;     /* 36px */
          --text-5xl: 3rem;        /* 48px */
          --text-6xl: 3.75rem;     /* 60px */
+         --text-7xl: 4.9rem;
+
 
 
       /* ============================================
@@ -168,8 +172,10 @@
          SEARCH & FILTERS
          ============================================ */
 
-      --search-padding: var(--space-6);
-      --search-gap: var(--space-4);
+         --search-padding: var(--space-6);
+         --search-gap: var(--space-4);
+         --search-width: 500px;
+         --search-height: var(--space-17);
 
 
       /* ============================================
@@ -205,6 +211,8 @@
    --radius-lg: 12px;
    --radius-xl: 20px;
    --radius-full: 9999px;
+
+   
 
    --transition-fast1: 0.15s ease;
    --transition-fast2: 0.15s ease-in-out;

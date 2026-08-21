@@ -1,0 +1,44 @@
+.nav-btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--nav-gap);
+}
+
+.nav-btn{
+    color: var(--text-inverse);
+    padding: var(--nav-btn-pad-y) var(--nav-btn-pad-x);
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.visit-btn{
+   
+    color: hsl(var(--btn-primary-text));
+    border: 2px solid hsl(var(--btn-primary-bg));
+    border-radius: var(--radius-sm);
+    background: hsl(var(--btn-primary-bg));
+    transition: all var(--transition-fast2);
+
+}
+
+.visit-btn:hover{
+    background: hsl(var(--btn-primary-hover)/0.9);
+}
+
+.visit-img{
+    width: var(--space-6);
+}
+
+.agent-btn{
+    background: transparent;
+    border: 2px solid hsl(var(--btn-primary-bg));
+    border-radius: var(--radius-sm);
+    color: hsl(var(--btn-primary-bg));
+    transition: all var(--transition-fast2);
+}
+
+.agent-btn:hover{
+    background: hsl(var(--btn-primary-bg)/0.4);
+}

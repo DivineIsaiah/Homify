@@ -3,6 +3,7 @@
 .hero{
     background: hsl(var(--bg-page));
     height: 80vh;
+    padding: 0 var(--section-padding-x);
 }
 
 .index-bg
@@ -119,11 +120,17 @@
 
 /* Featured Properties Section */
 
+.feat-properties{
+   
+}
+
 .feat{
     display: grid;
     place-items: center;
     gap: var(--space-10);
 }
+
+
 
 .prop-head{
     font-size: var(--text-6xl);

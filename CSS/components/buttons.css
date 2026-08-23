@@ -1,3 +1,4 @@
+/* nav bar btns */
 .nav-btns{
     display: flex;
     align-items: center;
@@ -41,4 +42,50 @@
 
 .agent-btn:hover{
     background: hsl(var(--btn-primary-bg)/0.4);
+}
+
+/* HOUSE CARDS CHEVRON */
+.house-img-prev,
+.house-img-next {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    place-items: center;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: var(--space-4);
+    height: var(--space-4);
+
+    background: none;
+    color: hsl(var(--btn-primary-text));
+
+    border: none;
+    border-radius: var(--radius-md);
+
+    font-size: 1.25rem;
+    line-height: 1;
+    transition: var(--transition-normal);
+}
+
+.house-card:hover .house-img-prev,
+.house-card:hover .house-img-next{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.house-img-prev {
+    left: var(--space-3);
+}
+
+.house-img-next {
+    right: var(--space-3);
+}
+
+.share-btn, .fav-btn{
+    width: var(--space-10);
 }

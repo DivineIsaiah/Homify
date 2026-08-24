@@ -8,7 +8,8 @@
 
 .house-track {
     display: flex;
-    gap: var(--space-6);
+    gap: var(--space-7);
+    padding: var(--space-6);
 }
 
 .house-card {
@@ -22,7 +23,7 @@
 /* HOUSE CARD IMAGE */
 .house-img-bx {
     width: 100%;
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 16 / 11;
     position: relative;
     overflow: hidden;
 }
@@ -50,37 +51,42 @@
 
 .house-det{
     display: flex;
-    padding: var(--space-3);
+    flex-direction: column;
+    gap: 0;
+    justify-content: flex-start;
+    padding: var(--space-8);
     
 }
 
-.house-det-lft{
+.house-deets{
     display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
+    margin-bottom: var(--space-4);
 }
 
+
 .price{
-    font-size: var(--text-5xl);
+    font-size: var(--text-4xl);
+    line-height: 1;
 }
 
 .det-icons{
     display: flex;
     align-items: center;
-    gap: var(--space-4);
+    gap: var(--space-6);
 }
 
 .det-spn{
     display: flex;
-    gap: var(--space-1);
+    gap: var(--space-2);
 }
 
 .det-spn p{
-    font-size: var(--text-3xl);
+    font-size: var(--text-2xl);
+    line-height: 1;
 }
 
 .det-icn{
-    width: var(--space-7);
+    width: var(--space-5);
 }
 
 .house-det-rgt{
@@ -89,6 +95,16 @@
     justify-content: flex-end;
     align-items: flex-start;
     flex: 1 0 ;
+}
+
+.house-add{
+    margin-top: var(--space-1);
+}
+
+.house-add-txt{
+    font-size: var(--text-2xl);
+    color: hsl(var(--color-black)/0.9);
+    line-height: 1;
 }
 
 

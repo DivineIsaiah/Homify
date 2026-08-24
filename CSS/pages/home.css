@@ -1,8 +1,12 @@
 /* hero section */
 
+.main-index{
+   margin-top: 7.1rem;
+}
+
 .hero{
     background: hsl(var(--bg-page));
-    height: 80vh;
+    height: 71vh;
     padding: 0 var(--section-padding-x);
 }
 
@@ -27,10 +31,8 @@
     position: absolute;
     inset: 0;
     border-radius: var(--radius-lg);
-    background-color: hsl(var(--color-black)/0.2);
+    background-color: hsl(var(--color-black)/0.3);
     z-index: -1;
-    
-    
 }
 
 .index-bg-in{
@@ -38,14 +40,17 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
-    gap: var(--space-8);
+    gap: var(--space-10);
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 500px;
 }
 
 .head-txt{
     color: hsl(var(--text-inverse));
     font-size: var(--text-7xl);
+    text-align: center;
 }
 
 .index-cont-bx{
@@ -54,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: var(--space-5);
+    gap: var(--space-7);
 }
 
 .index-hero-btns{
@@ -72,11 +77,12 @@
     font-weight: 700;
     border: none;
     border-radius: var(--radius-sm);
+    transition: all var(--transition-fast2);
 
 }
 .index-hero-btn:hover{
-    background: hsl(var(--btn-primary-text));
-    color: hsl(var(--btn-primary-bg));
+    background: hsl(var(--color-gold));
+    color: hsl(var(--btn-primary-text));
 }
 
 .index-inpt{
@@ -86,7 +92,12 @@
     height: var(--search-height);
     border-radius: var(--radius-sm);
     overflow: hidden;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
 
+.index-inpt:hover{
+    box-shadow: var(--shadow-xl);
 }
 
 .index-inpt input {
@@ -101,6 +112,7 @@
 
 .index-inpt input::placeholder{
     color: hsl(var(--text-primary)/0.8);
+    font-size: var(--text-4xl);
 }
 
 
@@ -110,10 +122,21 @@
     display: grid;
     place-items: center;
     background: hsl(var(--btn-secondary-bg));
+    cursor: pointer;
+    transition: var(--transition-bounce);
+}
+
+.input-srch:hover{
+   width: var(--space-25);
+}
+
+.input-srch:hover .srch-img{
+    width: 30%;
 }
 
 .srch-img{
     width: 40%;
+    transition: var(--transition-bounce);
 }
 
 

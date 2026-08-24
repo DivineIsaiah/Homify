@@ -1,10 +1,14 @@
 .header{
     width: 100%;
-    padding: var(--container-padding-x);
+    padding: var(--space-5);
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: hsl(var(--bg-page));
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    
 }
 
 .nav-bar{
@@ -29,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: var(--space-1);
+    gap: var(--space-2);
 }
 
 li .nav-link{
@@ -38,9 +42,11 @@ li .nav-link{
     border-radius: var(--space-2);
     background: transparent;
     transition: all var(--transition-fast2);
+    font-size: var(--text-3xl);
+    font-weight: 700;
 }
 li .nav-link:hover{
-    background: hsl(var(--btn-primary-hover));
+    background: hsl(var(--color-gold));
     color: hsl(var(--btn-primary-text));
 }
 

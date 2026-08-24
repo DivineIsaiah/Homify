@@ -7,41 +7,26 @@
 }
 
 .nav-btn{
-    color: var(--text-inverse);
+    color: var(--btn-primary-bg);
     padding: var(--nav-btn-pad-y) var(--nav-btn-pad-x);
+    font-size: var(--text-3xl);
+    font-weight: 500;
     display: flex;
     align-items: center;
     gap: var(--space-2);
-}
-
-.visit-btn{
-   
-    color: hsl(var(--btn-primary-text));
     border: 2px solid hsl(var(--btn-primary-bg));
     border-radius: var(--radius-sm);
-    background: hsl(var(--btn-primary-bg));
     transition: all var(--transition-fast2);
-
 }
 
-.visit-btn:hover{
-    background: hsl(var(--btn-primary-hover)/0.9);
+.nav-btn:hover{
+    background: hsl(var(--color-gold));
+    color: hsl(var(--btn-primary-text));
+    border: 2px solid hsl(var(--color-gold))
 }
 
 .visit-img{
     width: var(--space-6);
-}
-
-.agent-btn{
-    background: transparent;
-    border: 2px solid hsl(var(--btn-primary-bg));
-    border-radius: var(--radius-sm);
-    color: hsl(var(--btn-primary-bg));
-    transition: all var(--transition-fast2);
-}
-
-.agent-btn:hover{
-    background: hsl(var(--btn-primary-bg)/0.4);
 }
 
 /* HOUSE CARDS CHEVRON */

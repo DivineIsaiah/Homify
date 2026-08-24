@@ -78,9 +78,9 @@
 
       /* Shadows */
       --shadow-sm: 0 2px 6px hsl(0 0% 0% / 0.08);
-      --shadow-md: 0 4px 12px hsl(0 0% 0% / 0.12);
-      --shadow-lg: 0 8px 24px hsl(0 0% 0% / 0.15);
-      --shadow-xl: 0 12px 32px hsl(0 0% 0% / 0.18);
+      --shadow-md: 0 0 8px hsl(0 0% 0% / 0.3);
+      --shadow-lg: 0 0 24px hsl(0 0% 0% / 0.15);
+      --shadow-xl: 0 0 32px hsl(0 0% 0% / 0.5);
 
 
    /* ============================================
@@ -103,6 +103,7 @@
       --space-17: 4.5rem;
       --space-20: 5rem;     /* 80px */
       --space-24: 6rem;     /* 96px */
+      --space-25: 9rem;
 
 
       /* ============================================
@@ -137,8 +138,8 @@
 
       --nav-padding-y: var(--space-4);
       --nav-padding-x: var(--container-padding-x);
-      --nav-btn-pad-y: var(--space-2);
-      --nav-btn-pad-x: var(--space-4);
+      --nav-btn-pad-y: var(--space-3);
+      --nav-btn-pad-x: var(--space-5);
       --nav-gap: var(--container-padding-x);
 
 
@@ -182,7 +183,7 @@
          --search-padding: var(--space-6);
          --search-gap: var(--space-4);
          --search-width: 500px;
-         --search-height: var(--space-17);
+         --search-height: var(--space-24);
 
 
       /* ============================================

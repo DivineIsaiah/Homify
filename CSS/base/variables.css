@@ -190,6 +190,8 @@
          ============================================ */
 
       --button-padding-x: var(--space-6);
+      --button-padding-xl: var(--space-7);
+      --button-padding-yl: var(--space-8);
       --button-padding-y: var(--space-3);
       --button-gap: var(--space-3);
 

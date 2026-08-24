@@ -90,3 +90,96 @@
     align-items: flex-start;
     flex: 1 0 ;
 }
+
+
+/* HOUSE TRACK END  */
+.trk-end{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-6);
+}
+
+.trk-end-img-bx{
+    width: var(--space-6);
+}
+
+.trk-end-img{
+    width: 100%;
+}
+
+.trk-end-txt{
+    font-size: var(--text-2xl);
+    color: hsl(var(--text-muted));
+}
+
+
+/* SERVICE CARDS */
+
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    gap: var(--space-5);
+    justify-content: center;
+    align-items: stretch;
+}
+
+.service-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-10);
+    flex: 0 1 310px;
+    max-width: 310px;
+    min-width: 0;
+    padding: var(--space-7);
+    border: 2px solid black;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-bounce);
+}
+
+/* SERVICE CARD- contents */
+.service-img-bx{
+    width: 80%;
+    padding: var(--space-10);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border-radius: var(--radius-full);
+    background: hsl(var(--color-gold)/0.2);
+    transition: all var(--transition-normal);
+}
+
+.service-img{
+    width: 100%;
+}
+
+.service-txt{
+    width: 100%;
+    text-align: center;
+    flex: 1;
+}
+
+.service-title{
+    font-size: var(--text-5xl);
+    margin-bottom: var(--space-4);
+}
+
+.service-desc{
+    font-size: var(--text-3xl)
+}
+
+
+.service-card:hover{
+    transform: translateY(-7px);
+    border: 2px solid hsl(var(--color-gold));
+}
+
+.service-card:hover .service-title{
+    color: hsl(var(--text-accent));
+}
+
+.service-card:hover .service-img-bx{
+    background: hsl(var(--color-gold)/0.7);
+    
+}
+

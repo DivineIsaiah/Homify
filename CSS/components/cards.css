@@ -175,7 +175,7 @@
 .service-cards{
     display: grid;
     grid-template-columns: repeat(4, 310px);
-    gap: var(--space-5);
+    gap: var(--space-7);
     justify-content: center;
     align-items: stretch;
 }
@@ -185,7 +185,6 @@
     flex-direction: column;
     align-items: center;
     gap: var(--space-10);
-    flex: 0 1 310px;
     max-width: 310px;
     min-width: 0;
     padding: var(--space-7);
@@ -196,7 +195,7 @@
 
 /* SERVICE CARD- contents */
 .service-img-bx{
-    width: 80%;
+    width: 70%;
     padding: var(--space-10);
     border-radius: var(--radius-lg);
     overflow: hidden;

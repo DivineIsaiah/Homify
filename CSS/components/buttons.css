@@ -79,9 +79,10 @@
 }
 
 .service-btn{
+    display: inline-block;
     padding: var(--button-padding-y) var(--button-padding-xl);
     border: 2px solid hsl(var(--btn-primary-bg));
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     font-weight: 900;
     font-size: var(--text-3xl);
     transition: all var(--transition-normal);
@@ -90,6 +91,6 @@
 .service-btn:hover{
     background: hsl(var(--color-gold));
     color: hsl(var(--btn-primary-text));
-    border: 2px solid hsl(var(--btn-primary-text));
+    border-color: hsl(var(--btn-primary-text));
     
 }

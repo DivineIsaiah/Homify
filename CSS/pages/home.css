@@ -6,7 +6,7 @@
 
 .hero{
     background: hsl(var(--bg-page));
-    height: 71vh;
+    height: 72vh;
     padding: 0 var(--section-padding-x);
 }
 

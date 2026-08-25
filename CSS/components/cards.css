@@ -60,50 +60,54 @@
 
 .house-deets{
     display: flex;
-    margin-bottom: var(--space-4);
+    margin-bottom: var(--space-7);
 }
-
 
 .price{
     font-size: var(--text-4xl);
     line-height: 1;
+    color: hsl(var(--color-gold));
 }
 
 .det-icons{
     display: flex;
     align-items: center;
-    gap: var(--space-6);
+    gap: var(--space-10);
 }
 
 .det-spn{
     display: flex;
     gap: var(--space-2);
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .det-spn p{
-    font-size: var(--text-2xl);
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
     line-height: 1;
 }
 
 .det-icn{
-    width: var(--space-5);
+    width: var(--space-6);
 }
 
 .house-det-rgt{
     display: flex;
-    gap: var(--space-3);
+    gap: var(--space-8);
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: center;
     flex: 1 0 ;
 }
 
 .house-add{
-    margin-top: var(--space-1);
+    margin-top: var(--space-2);
 }
 
 .house-add-txt{
-    font-size: var(--text-2xl);
-    color: hsl(var(--color-black)/0.9);
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    color: hsl(var(--color-black)/0.7);
     line-height: 1;
 }
 
@@ -112,12 +116,14 @@
 .trk-end{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
     gap: var(--space-6);
+    padding: var(--space-7) ;
 }
 
 .trk-end-img-bx{
-    width: var(--space-6);
+    width: 25%;
 }
 
 .trk-end-img{
@@ -125,8 +131,42 @@
 }
 
 .trk-end-txt{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.trk-end-sm{
     font-size: var(--text-2xl);
-    color: hsl(var(--text-muted));
+    font-family: var(--font-heading);
+    color: hsl(var(--color-black));
+}
+.trk-end-he{
+    font-size: var(--text-3xl);
+    font-weight: 500;
+    font-family: var(--font-heading);
+    text-align: center;  
+    color: hsl(var(--color-black)); 
+}
+
+.trk-end-btn{
+    width: 100%;
+    padding: var(--space-5);
+    background-color: hsl(var(--color-gold));
+    color: hsl(var(--btn-primary-text));
+    font-weight: 700;
+    font-family: var(--font-heading);
+    text-align: center;
+    border: 2px solid hsl(var(--color-gold));
+    border-radius: var(--radius-md);
+    font-size: var(--text-3xl);
+    transition: all var(--transition-fast2);
+}
+
+.trk-end-btn:hover{
+    background-color:  hsl(var(--color-gold)/0.1);
+    color: hsl(var(--color-gold));
+
 }
 
 

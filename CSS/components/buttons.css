@@ -35,23 +35,18 @@
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
-    display: grid;
-    place-items: center;
-
+    
+    padding: var(--space-4);
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
 
-    width: var(--space-4);
-    height: var(--space-4);
-
-    background: none;
+    background: hsl(var(--color-gold)/0.6);
     color: hsl(var(--btn-primary-text));
 
     border: none;
     border-radius: var(--radius-md);
 
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     line-height: 1;
     transition: var(--transition-normal);
 }

@@ -1,12 +1,26 @@
- @font-face {
-      font-family: CosmicLedger;
-      src:url(../../assets/fonts/CosmicLedger.otf) format("truetype");
-   }
+
 
    p, a, h4{
     font-size: var(--text-2xl);
    }
 
-   h1, h2, h3, h4{
+
+   body,
+   p,
+   a
+   {
+    font-family: var(--font-body);
+    font-optical-sizing: auto;
+   }
+
+   h1, 
+   h2, 
+   h3, 
+   h4,
+   h5,
+   h6,
+   .price
+   {
       line-height: 1.3;
+      font-family: var(--font-heading);
    }

@@ -156,12 +156,6 @@
     font-size: var(--text-6xl);
 }
 
-/* TRACK END  */
-
-.trk-end-btn{
-    color: hsl(var(--btn-primary-bg));
-
-}
 
 /* SERVICES */
 .service-head{

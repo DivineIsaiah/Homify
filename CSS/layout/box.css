@@ -12,3 +12,7 @@ section{
     display: grid;
     place-items: center;
 }
+
+.main-index, .properties-main{
+   margin-top: 7.1rem;
+}

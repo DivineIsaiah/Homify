@@ -1,9 +1,5 @@
 /* hero section */
 
-.main-index{
-   margin-top: 7.1rem;
-}
-
 .hero{
     background: hsl(var(--bg-page));
     height: 72vh;
@@ -87,7 +83,7 @@
 
 .index-inpt{
     display: flex;
-    background: hsl(var(--bg-card));
+    background: hsl(var(--color-gray-100));
     width: min(100%, var(--search-width));
     height: var(--search-height);
     border-radius: var(--radius-sm);
@@ -97,8 +93,9 @@
 }
 
 .index-inpt:hover{
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-sm);
 }
+
 
 .index-inpt input {
     flex: 1;

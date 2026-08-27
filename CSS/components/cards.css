@@ -238,3 +238,118 @@
     
 }
 
+
+/* PROPERTY PAGE CARD */
+
+.property-infos{
+    padding: var(--space-6) 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--space-6);
+    width: 100%;
+    max-width: 1100px;
+}
+.property-info-rht{
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 370px;
+    gap: var(--space-6);
+    width: min(100%, 370px);
+    padding: var(--space-10);
+    border: 1px solid hsl(var(--color-gold)/0.5);
+    border-radius: var(--radius-md);
+}
+
+/* PROPERTY INFO RIGHT */
+
+.info-rht-action{
+    width: 100%;
+}
+
+.info-rht-action button,
+.info-rht-action a
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: var(--button-padding-y) var(--button-padding-x);
+    border: 1px solid hsl(var(--color-black));
+    border-radius: var(--radius-lg);
+    font-weight: 500;
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-3);
+}
+
+.info-rht-action .rqst-btn{
+    background-color: hsl(var(--color-gold));
+    color: hsl(var(--color-white));
+    border: 1px solid hsl(var(--color-gold));
+}
+
+.info-rht-action .rqst-btn:hover{
+    background-color: hsl(var(--color-gold)/0.8);
+}
+
+.info-rht-action .offer-btn:hover{
+    background-color: hsl(var(--color-black));
+     color: hsl(var(--color-white));
+}
+
+.offer-txt,
+.rqst-txt{
+    font-size: var(--text-xl);
+    color: hsl(var(--color-black)/0.85);
+}
+
+.info-rht-btns{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(var(--color-gold)/0.4);
+}
+
+.info-rht-btn1,
+.info-rht-btn2{
+    width: 100%;
+    padding: var(--space-3) ;
+    font-size: var(--text-2xl);
+    color: hsl(var(--color-forest-medium));
+    font-weight: 800;
+   
+}
+
+.info-rht-btn1{
+    
+    border-right: 1px solid hsl(var(--color-gold)/0.4);
+}
+
+/* PROPERTY INFO LEFT */
+.property-info-lft{
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.property-info{
+    width: 100%;
+}
+
+.property-info{
+    display: flex;
+
+}
+
+/* PROPERTY INFO LEFT INNER */
+
+.sale-deet{
+    flex: 1 1 auto;
+    min-width: none;
+}
+
+.sale-locat{
+    flex: 0 0 100px;
+}
+
+.locat-img{
+    width: 100%;
+}

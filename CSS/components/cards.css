@@ -253,7 +253,7 @@
 .property-info-rht{
     display: flex;
     flex-direction: column;
-    flex: 0 1 370px;
+    flex: 0 0 370px;
     gap: var(--space-6);
     width: min(100%, 370px);
     padding: var(--space-10);
@@ -327,29 +327,227 @@
 /* PROPERTY INFO LEFT */
 .property-info-lft{
     flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
     min-width: 0;
 }
 
 .property-info{
     width: 100%;
-}
-
-.property-info{
     display: flex;
-
+    flex-direction: column;
+    gap: var(--space-7);
+    border: 1px solid hsl(var(--color-gold)/0.5);
+    border-radius: var(--radius-md);
+    padding: var(--space-10);
 }
+
 
 /* PROPERTY INFO LEFT INNER */
 
+.info-col{
+    display: flex;
+    flex-direction: row;
+}
+
+.sale-deets{
+    flex: 1 1 auto;
+}
+
+.flex-pn{
+     display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.deet-hd{
+    margin-bottom: var(--space-3);
+}
+
+.dot{
+    display: block;
+    height: var(--space-5);
+    width: var(--space-5);
+    border-radius: var(--radius-full);
+    background: hsl(var(--color-gold));
+}
+
+
+.sale-deet-sle{
+    font-weight: 300;
+    font-size: var(--text-2xl);
+}
+
 .sale-deet{
+    align-items: center;
+    display: flex;
+    gap: var(--space-4);
     flex: 1 1 auto;
     min-width: none;
 }
 
+.price-deets{
+    gap: var(--space-8);
+}
+
 .sale-locat{
-    flex: 0 0 100px;
+    flex: 0 0 150px;
 }
 
 .locat-img{
     width: 100%;
+    object-fit: cover;
+}
+
+/* tooltip */
+
+.price-deet{
+    font-size: var(--text-4xl);
+    font-weight: 700;
+}
+
+.price-info {
+    position: relative;
+    display: flex;
+    gap: var(--space-3);
+    padding: var(--space-1) var(--space-5);
+    background-color: hsl(var(--color-gold)/0.19);
+}
+
+.price-info a{
+    font-weight: 800;
+    color: hsl(var(--color-gold));
+}
+
+.price-deet-btn {
+    width: var(--space-6);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: var(--text-2xl);
+    border-radius: 50%;
+    color: hsl(var(--color-gold));
+   
+}
+
+.price-deet-img{
+    width: 100%;
+}
+
+.tool-tip-info {
+    position: absolute;
+    bottom: calc(100% + 8px);
+    left: 50%;
+
+    width: 250px;
+    padding: var(--space-4);
+
+    background: white;
+    border: 1px solid hsl(var(--color-gold) / 0.5);
+    border-radius: var(--radius-md);
+
+    box-shadow: 0 4px 15px rgb(0 0 0 / 15%);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translate(-50%, 5px);
+
+    transition:
+        opacity 150ms ease,
+        transform 150ms ease,
+        visibility 150ms ease;
+}
+
+.tool-tip-info.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translate(-50%, 0);
+}
+
+.hous3-adds{
+    font-size: var(--text-2xl);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.furn{
+    gap: var(--space-6);
+}
+
+.furn-txt{
+    font-weight: 800;
+    font-size: var(--text-3xl);
+}
+
+.furn-dot{
+    width: var(--space-2);
+    height: var(--space-2);
+    background-color: hsl(var(--color-black));
+    border-radius: 100%;
+}
+
+/* PROPERTY ABOUT CARD */
+
+.prop-abt-head{
+    font-size: var(--text-4xl);
+    font-weight: 700;
+}
+
+.prop-abt-cards{
+    display: flex;
+    gap: var(--space-5);
+}
+
+.prop-abt-card{
+    display: flex;
+    flex: 1 1 auto;
+    gap: var(--space-8);
+    align-items: center;
+    padding: var(--space-4);
+    border-radius: var(--radius-md);
+    background-color: hsl(var(--color-gold) / 0.05);
+}
+
+.abt-card-img-bx{
+    width: var(--space-10);
+}
+
+.abt-card-txt1{
+    font-weight: 600;
+}
+
+.abt-card-txt2{
+    font-weight: 400;
+    color: hsl(var(--color-black)/0.6);
+}
+
+/* OWNER DETAIL */
+
+.abt-owner-deets{
+    width: 100%;
+}
+
+.abt-owner-deet{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.abt-owner-txt{
+    font-size: var(--text-2xl);
+    font-weight: 500;
+}
+
+.abt-owner-dot{
+    display: block;
+    background-color: hsl(var(--color-black));
+    width: var(--space-3);
+    height: var(--space-3);
+    border: none;
+    border-radius: var(--radius-full);
 }

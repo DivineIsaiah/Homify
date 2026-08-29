@@ -339,7 +339,7 @@
     flex-direction: column;
     gap: var(--space-7);
     border: 1px solid hsl(var(--color-gold)/0.5);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-lg);
     padding: var(--space-10);
 }
 
@@ -497,8 +497,17 @@
     font-weight: 700;
 }
 
-.prop-abt-cards{
+.prop-abt-cnt{
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: var(--space-7);
+    
+}
+
+.prop-abt-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: var(--space-5);
 }
 
@@ -546,8 +555,52 @@
 .abt-owner-dot{
     display: block;
     background-color: hsl(var(--color-black));
-    width: var(--space-3);
-    height: var(--space-3);
+    width: var(--space-2);
+    height: var(--space-2);
     border: none;
     border-radius: var(--radius-full);
+}
+
+.abt-owner-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+}
+
+.abt-owner-flex1{
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.owner-flex-lnk{
+    color: hsl(var(--color-emerald));
+    font-weight: 700;
+}
+
+.abt-owner-deet2{
+    margin-top: var(--space-4);
+}
+
+.prop-abt-stats{
+    margin-inline: calc(-1 * var(--space-10));
+    margin-bottom: calc(-1 * var(--space-10));
+    padding: var(--space-6) var(--space-10);
+    background-color: hsl(var(--color-gold)/0.05);
+    display: flex;
+    align-items: center;
+    gap: var(--space-5);
+    border: none;
+    border-radius:0 0 var(--radius-lg)  var(--radius-lg);
+
+    
+}
+.abt-stats-in{
+    display: flex;
+    gap: var(--space-4);
+}
+
+.abt-stats-bold{
+    font-weight: 800;
 }

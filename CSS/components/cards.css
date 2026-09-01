@@ -243,6 +243,7 @@
 /* PROPERTY PAGE CARD */
 
 .property-infos{
+    position: relative;
     padding: var(--space-6) 0;
     display: flex;
     flex-direction: row;
@@ -252,6 +253,8 @@
     max-width: 1100px;
 }
 .property-info-rht{
+    position: sticky;
+    top: 15rem;
     display: flex;
     flex-direction: column;
     flex: 0 0 370px;

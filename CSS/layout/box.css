@@ -1,3 +1,9 @@
+body,
+.main-index,
+.property-index{
+    background: hsl(var(--color-gray-10));
+}
+
 .container{
     max-width: var(--container-max-width);
     width: 100%;
@@ -7,12 +13,20 @@
 }
 
 section{
-    padding: var(--section-padding-y) var(--section-padding-x);
-    background-color: hsl(var(--bg-page));
+    padding: var(--section-padding-y) var(--section-padding-x) 0;
+    
     display: grid;
     place-items: center;
 }
 
-.main-index, .properties-main{
+.main-index{
    margin-top: 7.1rem;
+}
+
+.properties-main{
+  margin-top: 5.1rem;   
+}
+
+.property-index{
+    margin-top: 4rem;
 }

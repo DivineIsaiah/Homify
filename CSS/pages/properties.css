@@ -5,7 +5,7 @@
 
 .feed-filter-btns{
     position: sticky;
-    top: 80px;
+    top: 65.5px;
     z-index: 100;
     width: 100%;
     background-color: hsl(var(--bg-page));
@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: var(--space-8) 0;
+    padding: var(--space-5) 0;
 }
 
 .feed-filter-btns-in{
@@ -64,6 +64,6 @@
     width: 95%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 350px));
-    gap: var(--space-10);
+    gap: var(--space-5);
     justify-content: center;
 }

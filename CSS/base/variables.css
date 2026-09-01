@@ -6,6 +6,8 @@
    --color-emerald-light: 150 21% 93%;
 
    --color-gold: 36 49% 56%;
+   --color-gray-soft: 0 0% 99.60%;
+   --color-gray-10: 34.29deg 19.44% 96.88%;
    --color-gold-hover: 36 43% 49%;
    --color-gold-light: 36 39% 95%;
    --color-brown: 26 30% 32%;
@@ -16,6 +18,7 @@
 
    --color-white: 0 0% 100%;
    --color-off-white: 0 0% 98%;
+   --color-gray: 30 17% 98%;
    --color-gray-50: 210 10% 96%;
    --color-gray-100: 220 13% 91%;
    --color-gray-300: 216 12% 84%;
@@ -161,7 +164,7 @@
          SECTIONS
          ============================================ */
 
-      --section-padding-y: var(--space-20);
+      --section-padding-y: var(--space-16);
       --section-padding-x: var(--container-padding-x);
 
       --section-gap: var(--space-12);
@@ -196,8 +199,11 @@
 
          --search-padding: var(--space-6);
          --search-gap: var(--space-4);
-         --search-width: 500px;
-         --search-height: var(--space-24);
+         --search-width: 450px;
+         --search-width1: 420px;
+         --search-width2: 370px;
+         --search-height: var(--space-20);
+         --search-height2: var(--space-16);
 
 
       /* ============================================

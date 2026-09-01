@@ -4,9 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: hsl(var(--bg-page));
+    background: hsl(var(--color-gray));
+    border-bottom: 1px solid hsl(var(--color-gold)/0.5);
     position: fixed;
     top: 0;
     z-index: 100;
+
     
 }

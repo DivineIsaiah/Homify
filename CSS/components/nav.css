@@ -25,13 +25,13 @@
 }
 
 li .nav-link{
-    padding: var(--nav-btn-pad-y) var(--nav-btn-pad-x);
+    padding: var(--space-4) var(--space-8);
     border: none;
     border-radius: var(--space-2);
     background: transparent;
     transition: all var(--transition-fast2);
-    font-size: var(--text-3xl);
-    font-weight: 700;
+    font-size: var(--text-2xl);
+    font-weight: 500;
 }
 li .nav-link:hover{
     background: hsl(var(--color-gold));

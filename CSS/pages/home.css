@@ -1,7 +1,7 @@
 /* hero section */
 
 .hero{
-    background: hsl(var(--bg-page));
+    background: hsl(var(--color-gray));
     height: 72vh;
     padding: 0 var(--section-padding-x);
 }
@@ -47,6 +47,7 @@
     color: hsl(var(--text-inverse));
     font-size: var(--text-7xl);
     text-align: center;
+    line-height: 1.2;
 }
 
 .index-cont-bx{
@@ -67,7 +68,7 @@
 }
 
 .index-hero-btn{
-    padding: var(--button-padding-y) var(--space-10);
+    padding: var(--space-3) var(--space-10);
     color: hsl(var(--btn-primary-text));
     font-size: var(--text-3xl);
     font-weight: 700;
@@ -83,35 +84,51 @@
 
 .index-inpt{
     display: flex;
-    background: hsl(var(--color-gray-100));
-    width: min(100%, var(--search-width));
-    height: var(--search-height);
+    gap: var(--space-8);
+   
+    width: min(100%, var(--search-width1));
+    height: var(--search-height2);
+    background: transparent;
     border-radius: var(--radius-sm);
     overflow: hidden;
     cursor: pointer;
-    transition: all var(--transition-normal);
+    transition: all var(--transition-bounce);
+}
+
+.index-inpt:hover input{
+    box-shadow: var(--shadow-sm);
 }
 
 .index-inpt:hover{
-    box-shadow: var(--shadow-sm);
+    gap: var(--space-2);
 }
 
 
 .index-inpt input {
     flex: 1;
     min-width: 0;
-    border: none;
     outline: none;
     padding-inline: var(--space-5);
     font-size: var(--text-3xl);
+    background: hsl(var(--color-gray-50));
     color: hsl(var(--text-primary));
+    border: 1px solid hsl(var(--color-gold));
+    border-radius: var(--radius-sm);
 }
 
 .index-inpt input::placeholder{
     color: hsl(var(--text-primary)/0.8);
-    font-size: var(--text-4xl);
+    font-size: var(--text-2xl);
 }
 
+.prp-inpt input::placeholder{
+    font-size: var(--text-2xl);
+}
+
+.prp-inpt {
+    height: var(--space-16);
+    width: min(100%, var(--search-width2));
+}
 
 .input-srch {
     width: var(--space-24);
@@ -119,16 +136,17 @@
     display: grid;
     place-items: center;
     background: hsl(var(--btn-secondary-bg));
+    border-radius: var(--radius-sm);
     cursor: pointer;
     transition: var(--transition-bounce);
 }
 
 .input-srch:hover{
-   width: var(--space-25);
+   width: calc(var(--space-24) + var(--space-6) );
 }
 
 .input-srch:hover .srch-img{
-    width: 30%;
+    width: 32%;
 }
 
 .srch-img{
@@ -136,7 +154,9 @@
     transition: var(--transition-bounce);
 }
 
-
+.search-inpt{
+    background-color: hsl(var(--color-gold));
+}
 
 /* Featured Properties Section */
 
@@ -144,7 +164,7 @@
 .feat{
     display: grid;
     place-items: center;
-    gap: var(--space-10);
+    gap: var(--space-2);
 }
 
 
